@@ -1,0 +1,52 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    tools:context="jaira.cabarrubias.com.alarmstopwatch.user.alarmstopwatchapplication.AlarmFragment">
+
+    <TimePicker
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="45dp"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Stop Alarm"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/stop_alarm"
+        android:layout_below="@+id/time"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Set Alarm"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/set_alarm"
+        android:layout_below="@+id/time"
+        android:layout_alignRight="@+id/time"
+        android:layout_alignEnd="@+id/time"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Set your alarm clock!"
+        android:id="@+id/update_text"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/set_alarm"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
